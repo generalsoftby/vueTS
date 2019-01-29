@@ -1,0 +1,22 @@
+import bAlert          from 'bootstrap-vue/es/components/alert/alert';
+import bButton         from 'bootstrap-vue/es/components/button/button';
+import bFormGroup      from 'bootstrap-vue/es/components/form-group/form-group';
+import bFormInput      from 'bootstrap-vue/es/components/form-input/form-input';
+import bFormRadio      from 'bootstrap-vue/es/components/form-radio/form-radio';
+import bFormRadioGroup from 'bootstrap-vue/es/components/form-radio/form-radio-group';
+import bForm           from 'bootstrap-vue/es/components/form/form';
+import bContainer      from 'bootstrap-vue/es/components/layout/container';
+import bRow            from 'bootstrap-vue/es/components/layout/row';
+import bTable          from 'bootstrap-vue/es/components/table/table';
+import Vue             from 'vue';
+
+Vue.component('b-container', bContainer);
+Vue.component('b-row', bRow);
+Vue.component('b-form', bForm);
+Vue.component('b-form-radio', bFormRadio);
+Vue.component('b-form-input', bFormInput);
+Vue.component('b-form-group', bFormGroup);
+Vue.component('b-form-radio-group', bFormRadioGroup);
+Vue.component('b-button', bButton);
+Vue.component('b-alert', bAlert);
+Vue.component('b-table', bTable);

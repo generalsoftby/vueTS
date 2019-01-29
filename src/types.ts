@@ -1,7 +1,7 @@
 import { Figure, FigureType } from '@/types/Figures';
 
 export interface RootState {
-
+    title: 'VueTS'
 }
 
 export interface AddFigureFormState {

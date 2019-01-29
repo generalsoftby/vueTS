@@ -9,36 +9,22 @@
     @Component({})
     export default class AddFigureForm extends Vue {
         @State(namespace) state: ListFiguresState;
+
+        readonly columns = ['type', 'area'];
     }
 </script>
 
 <template>
-    <div>
-        <table>
-            <thead>
-            <tr>
-                <th>
-                    Type
-                </th>
-                <th>
-                    Area
-                </th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr v-for="figure in state.figures">
-                <td>
-                    {{ figure.getType() }}
-                </td>
-                <td>
-                    {{ figure.area }}
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+        <b-table :items="state.figures"
+                 :fields="columns"
+                 :bordered="true"
+                 :striped="true"
+                 :hover="true"
+        />
 </template>
 
-<style scoped>
-
+<style lang="scss" scoped>
+    .b-table {
+        margin-top: 50px;
+    }
 </style>

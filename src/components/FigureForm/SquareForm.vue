@@ -10,9 +10,9 @@
 </script>
 
 <template>
-    <div>
-        <input type="text" v-model="figure.sideLength" placeholder="Side Length"/>
-    </div>
+    <b-form-group label="Enter side length">
+        <b-form-input type="text" v-model="figure.sideLength" placeholder="Side Length"/>
+    </b-form-group>
 </template>
 
 <style scoped>

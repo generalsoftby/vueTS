@@ -1,7 +1,8 @@
 <script lang="ts">
-    import AbstractFigureForm from './AbstractFigureForm.vue';
-    import Component          from 'vue-class-component';
+    import Component from 'vue-class-component';
+
     import { Circle }         from '@/types/Figures';
+    import AbstractFigureForm from '@/components/FigureForm/AbstractFigureForm.vue';
 
     @Component
     export default class CircleForm extends AbstractFigureForm<Circle> {
@@ -9,9 +10,9 @@
 </script>
 
 <template>
-    <div>
-        <input type="text" v-model="figure.radius" placeholder="Radius"/>
-    </div>
+    <b-form-group label="Enter radius">
+        <b-form-input type="text" v-model="figure.radius" placeholder="Radius"/>
+    </b-form-group>
 </template>
 
 <style scoped>
