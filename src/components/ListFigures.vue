@@ -1,8 +1,9 @@
 <script lang="ts">
-    import Vue                  from 'vue';
-    import { State }            from 'vuex-class';
+    import Vue       from 'vue';
+    import { State } from 'vuex-class';
+    import Component from 'vue-class-component';
+
     import { ListFiguresState } from '@/types';
-    import Component            from 'vue-class-component';
 
     const namespace = 'figures';
 
@@ -15,12 +16,17 @@
 </script>
 
 <template>
+    <div>
         <b-table :items="state.figures"
                  :fields="columns"
                  :bordered="true"
                  :striped="true"
                  :hover="true"
         />
+        <router-link :to="{ name: 'statistics' }">
+            Stats
+        </router-link>
+    </div>
 </template>
 
 <style lang="scss" scoped>

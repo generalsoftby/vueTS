@@ -3,17 +3,17 @@ import { Module } from 'vuex';
 import { ListFiguresState }    from '@/types';
 import { mutations }           from '@/store/figure/list/mutations';
 import { AddFigureFormModule } from '@/store/figure/add';
+import { getters }             from '@/store/figure/list/getters';
 
 export const state: ListFiguresState = {
     figures: [],
 };
 
-const namespaced: boolean = true;
-
 export const ListFiguresModule: Module<ListFiguresState, any> = {
-    namespaced,
+    namespaced: true,
     state,
     mutations,
+    getters,
     modules: {
         add: AddFigureFormModule
     }
