@@ -7,6 +7,11 @@ import bFormRadioGroup from 'bootstrap-vue/es/components/form-radio/form-radio-g
 import bForm           from 'bootstrap-vue/es/components/form/form';
 import bContainer      from 'bootstrap-vue/es/components/layout/container';
 import bRow            from 'bootstrap-vue/es/components/layout/row';
+import bNavbar         from 'bootstrap-vue/es/components/navbar/navbar';
+import bNavbarNav      from 'bootstrap-vue/es/components/navbar/navbar-nav';
+import bNavItem      from 'bootstrap-vue/es/components/nav/nav-item';
+import bProgress       from 'bootstrap-vue/es/components/progress/progress';
+import bProgressBar    from 'bootstrap-vue/es/components/progress/progress-bar';
 import bTable          from 'bootstrap-vue/es/components/table/table';
 import Vue             from 'vue';
 
@@ -20,3 +25,8 @@ Vue.component('b-form-radio-group', bFormRadioGroup);
 Vue.component('b-button', bButton);
 Vue.component('b-alert', bAlert);
 Vue.component('b-table', bTable);
+Vue.component('b-progress-bar', bProgressBar);
+Vue.component('b-progress', bProgress);
+Vue.component('b-navbar', bNavbar);
+Vue.component('b-navbar-nav', bNavbarNav);
+Vue.component('b-nav-item', bNavItem);

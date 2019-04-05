@@ -10,6 +10,6 @@ export interface AddFigureFormState {
     error: string | null,
 }
 
-export interface ListFiguresState {
+export interface FiguresState {
     figures: Figure[],
 }

@@ -1,7 +1,7 @@
 import Vue  from 'vue';
 import Vuex from 'vuex';
 
-import { ListFiguresModule } from '@/store/figure/list';
+import { FiguresModule } from '@/store/figure';
 
 Vue.use(Vuex);
 
@@ -10,6 +10,6 @@ export default new Vuex.Store({
     mutations: {},
     actions: {},
     modules: {
-        figures: ListFiguresModule,
+        figures: FiguresModule,
     }
 });

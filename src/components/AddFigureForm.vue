@@ -10,8 +10,8 @@
     import { SET_TYPE }           from '@/store/figure/add/mutations.types';
     import AbstractFigureForm     from '@/components/FigureForm/AbstractFigureForm.vue';
 
-    const path = 'figures/add';
-    const module = namespace('figures');
+    const path = 'figures/add',
+          module = namespace('figures');
 
     @Component({
         components: {
@@ -50,6 +50,9 @@
         </b-alert>
         <b-button type="submit" variant="primary" :disabled="!formState.type">
             Add figure
+            <span v-if="formState.figure && formState.figure.isValid()">
+                {{ formState.figure.area }}
+            </span>
         </b-button>
     </b-form>
 </template>

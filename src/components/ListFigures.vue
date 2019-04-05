@@ -3,13 +3,13 @@
     import { State } from 'vuex-class';
     import Component from 'vue-class-component';
 
-    import { ListFiguresState } from '@/types';
+    import { FiguresState } from '@/types';
 
     const namespace = 'figures';
 
     @Component({})
-    export default class AddFigureForm extends Vue {
-        @State(namespace) state: ListFiguresState;
+    export default class ListFigures extends Vue {
+        @State(namespace) state: FiguresState;
 
         readonly columns = ['type', 'area'];
     }
@@ -23,9 +23,6 @@
                  :striped="true"
                  :hover="true"
         />
-        <router-link :to="{ name: 'statistics' }">
-            Stats
-        </router-link>
     </div>
 </template>
 

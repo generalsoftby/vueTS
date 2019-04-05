@@ -1,11 +1,13 @@
 <script lang="ts">
     import { Component, Vue } from 'vue-property-decorator';
 
-    import AddFigureForm      from '@/components/AddFigureForm.vue';
-    import ListFigures        from '@/components/ListFigures.vue';
+    import AddFigureForm   from '@/components/AddFigureForm.vue';
+    import ListFigures     from '@/components/ListFigures.vue';
+    import StatisticsBlock from '@/components/StatisticsBlock.vue';
 
     @Component({
         components: {
+            StatisticsBlock,
             ListFigures,
             AddFigureForm,
         },
@@ -16,7 +18,8 @@
 
 <template>
     <div>
-        <add-figure-form/>
-        <list-figures/>
+        <AddFigureForm/>
+        <ListFigures/>
+        <StatisticsBlock/>
     </div>
 </template>
